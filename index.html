@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Infografis Kota Bima</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.42.0/apexcharts.min.css"
+        integrity="sha512-nnNXPeQKvNOEUd+TrFbofWwHT0ezcZiFU5E/Lv2+JlZCQwQ/ACM33FxPoQ6ZEFNnERrTho8lF0MCEH9DBZ/wWw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #foto {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #foto img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-chart-column fa-beat"
+                    style="color: #1a1d23;"></i>
+                Infografis Kota Bima </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-database fa-bounce"></i> Data
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="Desa.html">Desa</a></li>
+                            <li><a class="dropdown-item" href="pendudukjeniskelamin.html">Jumlah Penduduk</a></li>
+                            <li><a class="dropdown-item" href="#">Pendidikan</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-disabled="true" data-bs-toggle="modal" data-bs-target="#infoModal"><i
+                                class="fa-solid fa-info"></i> Info</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" id="foto">
+        <img src="https://scontent.fjog4-1.fna.fbcdn.net/v/t39.30808-6/294839351_562093882172286_6342867541427918372_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=52f669&_nc_ohc=jhU71I2ZuCAAX9WpG8q&_nc_ht=scontent.fjog4-1.fna&oh=00_AfBWLW29RlsLHfTHIUWw9rCa2O5BsX3Ir2lu2EO5FULkSQ&oe=65188515"
+            alt="foto-kota-bima " srcset="">
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="infoModalLabel">Info </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Nama: Muhammad Nur Fauzan</p>
+                    <p>NIM: 22/492540/SV/20541</p>
+                    <p>Kelas: A</p>
+                    <p>Sumber Data: <a href="https://bimakota.bps.go.id/"
+                            target="_blank">https://bimakota.bps.go.id/</a>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <button type="button" class="btn btn-primary">Simpan</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
