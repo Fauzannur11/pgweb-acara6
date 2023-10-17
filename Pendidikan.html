@@ -1,10 +1,9 @@
 <!doctype html>
 <html lang="en">
-hhh
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Penduduk Berdasarkan Jenis Kelamin</title>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -36,7 +35,7 @@ hhh
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item" href="Desa.html">Desa</a></li>
                             <li><a class="dropdown-item" href="pendudukjeniskelamin.html">Jumlah Penduduk</a></li>
-                            <li><a class="dropdown-item" href="#">Pendidikan</a></li>
+                            <li><a class="dropdown-item" href="Pendidikan.html">Pendidikan</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
@@ -55,7 +54,7 @@ hhh
     <div class="container mt-4">
         <div class="card">
             <div class="card-header">
-                <h5>Jumlah Penduduk Berdasarkan Usia dan Jenis Kelamin</h5>
+                <h5>Sarana Pendidikan</h5>
             </div>
             <div class="card-body">
                 <div id="chart">
@@ -99,27 +98,38 @@ hhh
     <script>
          
          var options = {
-          series: [14, 23, 21, 17, 15, 10, 12, 17, 21],
+          series: [{
+            name: "Fasilitas Pendidikan",
+            data: [37,43,19,64,57,]
+        }],
+
+            
           chart: {
-          type: 'polarArea',
+          height: 350,
+          type: 'line',
+          zoom: {
+            enabled: false
+          }
+        },
+        dataLabels: {
+          enabled: false
         },
         stroke: {
-          colors: ['#fff']
+          curve: 'straight'
         },
-        fill: {
-          opacity: 0.8
+        title: {
+          text: 'Berdasarkan Kecamatan',
+          align: 'left'
         },
-        responsive: [{
-          breakpoint: 480,
-          options: {
-            chart: {
-              width: 200
-            },
-            legend: {
-              position: 'bottom'
-            }
-          }
-        }]
+        grid: {
+          row: {
+            colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
+            opacity: 0.5
+          },
+        },
+        xaxis: {
+          categories: ['Rasanae Barat','Mpunda','Rasanae Timur','Raba','Asakota'],
+        }
         };
 
         var chart = new ApexCharts(document.querySelector("#chart"), options);
